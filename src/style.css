@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -6,88 +7,95 @@
   font-style: normal;
 }
 
-body {
+.body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/093/original/pexels-enginakyurt-1435895.jpg?1719154235");
   background-size: cover;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#container {
-  width: 40%;
-  height: 55%;
+.container {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
   opacity: 0.9;
-  padding: 20px 40px 30px;
+  padding: 25px 30px 15px;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 160px auto;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 15%;
-  margin-bottom: 1.5%;
+  padding: 20px 0px;
 }
 
 h1 {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.5;
   color: #44394f;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60%;
+  height: 30%;
+  padding: 10px 0px;
 }
 
-#recipeForm {
+.recipeForm {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 20%;
+  height: 100%;
   justify-content: space-between;
 }
-small {
+
+.recipeText {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  border-left: 3px solid #e49296;
+  padding: 0px 0px 0px 15px;
+}
+
+.small {
   padding: 8px 0px 15px 0px;
   margin-bottom: 2%;
   opacity: 0.6;
 }
+
 #searchInput {
   width: 75%;
-  height: 100%;
-  border: 1px solid #e69797;
+  height: 120%;
+  border: 1px solid #a60201;
   border-radius: 5px;
   padding: 0 10px;
 }
 #submitInput {
   width: 20%;
-  height: 100%;
-  background-color: #f1b4a3;
+  height: 123%;
+  background-color: #a60201;
   color: whitesmoke;
-  border: 1px solid #f1b4a3;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-.recipeText {
-  width: 100%;
-  height: 55%;
-  font-size: 14px;
-  line-height: 26px;
-  border-left: 3px solid #e49296;
-  padding: 0px 0px 0px 15px;
 }
 
 .generating {
@@ -107,13 +115,18 @@ small {
 
 footer {
   display: flex;
-  justify-content: last baseline;
-  align-items: last baseline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  height: 20%;
-  font-size: 12px;
+  height: 25%;
+  font-size: 10px;
+}
+
+footer p {
+  text-align: center;
 }
 
 a {
-  color: #6385a2;
+  color: #507d0d;
 }

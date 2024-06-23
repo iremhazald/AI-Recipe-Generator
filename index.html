@@ -8,22 +8,21 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
   </head>
-  <body>
-    <div id="container">
-     <header><h1>AI Recipe Generator</h1></header>
-      <main>
-         <form id="recipeForm">
-           <input type="text" id="searchInput" placeholder="Enter the recipe you want to cook.." autofocus required autocomplete="off">
+  <body class="body">
+    <div id="container" class="container">
+     <header class="header"><h1> 🍕🍰 AI Recipe Generator 🥐🍖</h1></header>
+      <main class="main">
+         <form id="recipeForm" class="recipeForm">
+           <input type="text" id="searchInput" placeholder="Enter the food you want to cook.." autofocus required autocomplete="off">
            <input type="submit" id="submitInput" value="Submit">
          </form>
-         <small>i.e: Pizza, Sushi or Pide</small>
-         <div class="recipeText" id="recipeText">
-         </div>
+         <small class="small">i.e: Pizza, Sushi or Pide</small>   
+        <div class="recipeText" id="recipeText"></div>
       </main>
-       <footer>
+ <footer>
     <p>
       This AI project was coded by
-      <span style="color:#6385a2; text-decoration: underline; cursor: pointer"
+      <span style="color:#507D0D; text-decoration: underline; cursor: pointer"
         >İrem Hazal Deveci</span
       >
       and is open sourced on
@@ -41,4 +40,4 @@
     
   </body>
 </html>
-<script src="src/index.js"></script>
+<script src="src/script.js"></script>
