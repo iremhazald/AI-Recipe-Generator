@@ -7,9 +7,113 @@
 }
 
 body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/093/original/pexels-enginakyurt-1435895.jpg?1719154235");
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#container {
+  width: 40%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  padding: 20px 40px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 1.5%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #44394f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+
+#recipeForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+}
+small {
+  padding: 8px 0px 15px 0px;
+  margin-bottom: 2%;
+  opacity: 0.6;
+}
+#searchInput {
+  width: 75%;
+  height: 100%;
+  border: 1px solid #e69797;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+#submitInput {
+  width: 20%;
+  height: 100%;
+  background-color: #f1b4a3;
+  color: whitesmoke;
+  border: 1px solid #f1b4a3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.recipeText {
+  width: 100%;
+  height: 55%;
+  font-size: 14px;
+  line-height: 26px;
+  border-left: 3px solid #e49296;
+  padding: 0px 0px 0px 15px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: last baseline;
+  align-items: last baseline;
+  width: 100%;
+  height: 20%;
+  font-size: 12px;
+}
+
+a {
+  color: #6385a2;
 }
